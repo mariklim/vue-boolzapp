@@ -60,9 +60,10 @@
     cursor: pointer;
 }
 /* Column left, notification, search and contacts */
-/* .container-left{
+.container-left{
     height: calc(100% - 70px);
-} */
+    overflow-y: scroll;
+}
 .notification{
     height: 70px;
     background-color: #8edafc;
@@ -121,6 +122,7 @@
 }
 
 /* contacts */
+
 .contacts ul li{
     list-style: none;
     padding: 10 0px;
