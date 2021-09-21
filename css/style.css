@@ -66,6 +66,40 @@
     background-image: url("../img/mine.jpg");
     overflow-y: scroll;
 }
+
+.container-small{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.sent, .received{
+    width: 50%;
+    margin-top: 50px;
+}
+.sent{
+    padding-left: 30px;
+}
+.sent-message{
+    position: relative;
+    background-color: #d5f9ba;
+    padding: 15px 7px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.time-message{
+    font-size: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3px;
+    color: rgb(197, 197, 197);
+}
 /* row bottom - input for sending message */
 .row-bottom{
     display: flex;
