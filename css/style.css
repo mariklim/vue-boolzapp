@@ -68,25 +68,23 @@
 }
 
 .container-small{
-    display: flex;
-    justify-content: space-between;
     margin: auto;
     width: 80%;
-    height: 100%;
     border-radius: 10px;
 }
 
-.sent, .received{
-    width: 50%;
-    margin-top: 50px;
-}
-.sent{
-    padding-left: 30px;
-}
 .sent-message{
     position: relative;
     background-color: #d5f9ba;
-    padding: 15px 7px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.receved-message{
+    position: relative;
+    background-color: #ffffff;
+    padding: 15px 20px;
     border-radius: 10px;
     font-size: 13px;
     margin-bottom: 10px;
