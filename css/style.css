@@ -130,9 +130,10 @@
 .contact{
     display: flex;
     padding: 10px;
+    border-bottom: 1px solid #b1b1b141;
 }
-.contact span {
-    font-size: 15px;
+.contact span { 
+    font-size: 15px;    
 }
 
 .current-chat{

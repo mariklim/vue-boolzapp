@@ -51,78 +51,22 @@
                     <!-- all contacts -->
                     <div class="contacts">
                         <ul>
-                            <li>
+                            <li v-for = "contact in contacts">
                                 <div class="contact">
                                     <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
+                                        <img :src="contact.avatar" alt="avatar 1">
                                     </div>
-                                    <span>Nome utente</span>
+                                    <span>{{contact.name}}</span>
                                 </div>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <div class="contact current-chat">
                                     <div class="user-avatar">
                                         <img src="img/avatar_1.jpg" alt="avatar 1">
                                     </div>
                                     <span>Nome utente</span>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="contact">
-                                    <div class="user-avatar">
-                                        <img src="img/avatar_1.jpg" alt="avatar 1">
-                                    </div>
-                                    <span>Nome utente</span>
-                                </div>
-                            </li>   
+                            </li> -->
                         </ul>
 
                     </div>
