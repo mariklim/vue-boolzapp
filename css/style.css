@@ -60,9 +60,9 @@
     cursor: pointer;
 }
 /* Column left, notification, search and contacts */
-.container-left{
+/* .container-left{
     height: calc(100% - 70px);
-}
+} */
 .notification{
     height: 70px;
     background-color: #8edafc;
@@ -91,6 +91,36 @@
     font-size: 11px;
     text-decoration: underline;
 }
+.search{
+ display: flex;
+ background-color: #fafafa;
+ padding: 10px;
+}
+
+.btn-search, .search input{
+    height: 35px;
+    background-color: white;
+    border: 1px solid rgba(212, 202, 202, 0.274);
+}
+.search input{
+    width: 85%;
+    border-left: 0px;
+}
+.btn-search{
+    position: relative;
+    width: 15%;
+    cursor: pointer;
+}
+
+.btn-search i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #b1b1b1;
+}
+
+
 /* Middle part - Chat */
 .chat{
     height: calc(100% - 140px);
