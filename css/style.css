@@ -59,7 +59,38 @@
     font-size: 20px;
     cursor: pointer;
 }
+/* Column left, notification, search and contacts */
+.container-left{
+    height: calc(100% - 70px);
+}
+.notification{
+    height: 70px;
+    background-color: #8edafc;
+    padding: 15px;
+}
 
+.notification i{
+    font-size: 30px;
+    border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.226);
+    color:#8edafc;
+    background-color: rgba(255, 255, 255, 0.753);
+    
+}
+.notification i, .notification span{
+    vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.notification span :first-child{
+    font-size: 13px;
+}
+.notification span :last-child{
+    font-size: 11px;
+    text-decoration: underline;
+}
 /* Middle part - Chat */
 .chat{
     height: calc(100% - 140px);
@@ -67,10 +98,10 @@
     overflow-y: scroll;
 }
 
-.container-small{
+.container-right{
     width: 80%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .sent-message{
     background-color: #d5f9ba;
