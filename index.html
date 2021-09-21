@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /font awesome -->
     <link rel="stylesheet" href="css/style.css">
     <title>Boolzapp</title>
 </head>
+
 <body>
     <div id="root" class="root">
         <div class="container">
             <!-- column left -->
+            <!-- user avatar -->
             <div class="column-left">
                 <div class="row-top">
                     <div class="user-avatar">
                         <img src="img/avatar_io.jpg" alt="my avatar">
                         <p class="user-name">Nome utente</p>
                     </div>
+                    <!--/ user avatar -->
                     <div class="icons-btn">
                         <i class="fas fa-circle-notch"></i>
                         <i class="fas fa-comment-alt"></i>
                         <i class="fas fa-ellipsis-v"></i>
                     </div>
                 </div>
+                <!-- notification, search, contacts -->
                 <div class="container-left">
                     <div class="notification">
                         <i class="fas fa-bell-slash"></i>
@@ -38,10 +45,35 @@
                         <div class="btn-search">
                             <i class="fas fa-search"></i>
                         </div>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat"> 
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
+
+                    <!-- all contacts -->
+                    <div class="contacts">
+                        <ul>
+                            <li>
+                                <div class="contact">
+                                    <div class="user-avatar">
+                                        <img src="img/avatar_1.jpg" alt="avatar 1">
+                                    </div>
+                                    <span>Nome utente</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="contact current-chat">
+                                    <div class="user-avatar">
+                                        <img src="img/avatar_1.jpg" alt="avatar 1">
+                                    </div>
+                                    <span>Nome utente</span>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- /all contacts -->
                 </div>
-                
+                <!-- /notification, search,contacts -->
+
             </div>
             <!-- /column left -->
             <div class="column-right">
@@ -60,23 +92,23 @@
                 <!-- Middle per chat -->
                 <div class="chat">
                     <div class="container-right">
-                            <div class="sent-message">
-                                Testo del messagio
-                                <div class="time-message">
-                                    21/09/2021 15:33
-                                </div>
+                        <div class="sent-message">
+                            Testo del messagio
+                            <div class="time-message">
+                                21/09/2021 15:33
                             </div>
-                            
-                            
-                            <div class="receved-message">
-                                Testo del messagio
-                                <div class="time-message">
-                                    21/09/2021 15:33
-                                </div>
-                            </div>
-                          
+                        </div>
 
-                        
+
+                        <div class="receved-message">
+                            Testo del messagio
+                            <div class="time-message">
+                                21/09/2021 15:33
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
                 <!-- /Middle per chat -->
@@ -86,7 +118,7 @@
                     <i class="far fa-smile-beam"></i>
                     <input type="text" placeholder="Scrivi un messaggio">
                     <i class="fas fa-microphone"></i>
-                <!-- /Input for sending messages -->
+                    <!-- /Input for sending messages -->
 
                 </div>
             </div>
@@ -94,8 +126,9 @@
         </div>
 
     </div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
