@@ -25,11 +25,11 @@
 
 /* column */
 .column-left, .column-right{
-    border: 1px solid white;
     height: 100%;
 }
 .column-left{
     width: 35%;
+    border-right: 1px solid  #c2bdbdf5;
 }
 .column-right{
     width: 65%;
@@ -57,5 +57,17 @@
     padding: 0 5px;
     color: #b1b1b1;
     font-size: 20px;
+    cursor: pointer;
 }
 
+/* Middle part - Chat */
+.chat{
+    height: calc(100% - 140px);
+    background-image: url("../img/mine.jpg");
+    overflow-y: scroll;
+}
+/* row bottom - input for sending message */
+.row-bottom{
+    height: 70px;
+    background-color:#f3eeea;
+}
