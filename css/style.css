@@ -23,6 +23,7 @@
     background-color: aquamarine;
 }
 
+/* column */
 .column-left, .column-right{
     border: 1px solid white;
     height: 100%;
@@ -34,6 +35,7 @@
     width: 65%;
 }
 
+/* column top rows */
 .row-top{
     height: 70px;
     background-color: #eaeaea;
