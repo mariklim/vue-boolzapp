@@ -68,12 +68,13 @@
 }
 
 .container-small{
-    margin: auto;
     width: 80%;
     border-radius: 10px;
 }
 
 .sent-message{
+    width: 40%;
+    margin-left: auto;
     position: relative;
     background-color: #d5f9ba;
     padding: 15px 20px;
@@ -81,7 +82,9 @@
     font-size: 13px;
     margin-bottom: 10px;
 }
-.receved-message{
+.receved-message{   
+    width: 40%;
+    margin-right: auto;
     position: relative;
     background-color: #ffffff;
     padding: 15px 20px;
