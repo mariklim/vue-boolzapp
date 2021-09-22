@@ -84,17 +84,22 @@ var app = new Vue({
 			},
 		],
 		indexContact: 0,
+		newMessages: {
+			date: '10/01/2020 15:30:55',
+			message: '',
+			status: 'sent'
+		}
 	},
 	methods:{
 		// al click indice della chat corrente (indexContact che partiva da 0) prende il valore del indice cliccato (indice del array che cicliamo con v-for), se sono uguali si aggiunge la classe "current-chat"
 		currentChat: function(currentIndex){
 			this.indexContact = currentIndex;
 		},
-		addClass: function(li){
-			if(this.messages.status == sent){
-				li.addClassList("sent-message");
-			}
+		btnSend:function(){
+			// alert(this.newMessages.message)
+			this.contacts[0].messages.push(this.newMessages);
 		}
+		
 	},
   })
 

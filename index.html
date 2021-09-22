@@ -101,6 +101,7 @@
                                        <div class="time-message">21/09/2021 15:33</div>
                                    </div>
                             </li>
+                            <!-- <p class="sent">{{newMessages}}</p> -->
                         </ul>
                         <!-- <div class="sent-message">
                          <p>{{contacts[indexContact].messages[indexContact].message}}</p>   
@@ -125,7 +126,9 @@
                 <!-- Input for sending messages -->
                 <div class="row-bottom icons-btn i-btn-bottom">
                     <i class="far fa-smile-beam"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input 
+                    v-model ="newMessages.message" @keyup.enter="btnSend()"
+                    type="text" placeholder="Scrivi un messaggio">
                     <i class="fas fa-microphone"></i>
                     <!-- /Input for sending messages -->
 
