@@ -51,10 +51,10 @@
                     <!-- all contacts -->
                     <div class="contacts">
                         <ul>
-                            <li v-for = "contact in contacts">
+                            <li v-for = "(contact, index) in contacts" :key="index" @click="currentChat(index)":class="indexContact == index ? 'current-chat' : null">
                                 <div class="contact">
                                     <div class="user-avatar">
-                                        <img :src="contact.avatar" alt="avatar 1">
+                                        <img :src="contact.avatar" :alt="contact.name">
                                     </div>
                                     <span>{{contact.name}}</span>
                                 </div>
@@ -90,10 +90,10 @@
                 </div>
 
                 <!-- Middle per chat -->
-                <div class="chat">
+                <div class="chat" >
                     <div class="container-right">
                         <div class="sent-message">
-                            Testo del messagio
+                            <!-- Testo del messagio -->
                             <div class="time-message">
                                 21/09/2021 15:33
                             </div>
@@ -101,25 +101,12 @@
 
 
                         <div class="receved-message">
-                            Testo del messagio
+                            <!-- Testo del messagio -->
                             <div class="time-message">
                                 21/09/2021 15:33
                             </div>
                         </div>
 
-                        <div class="sent-message">
-                            Testo del messagio
-                            <div class="time-message">
-                                21/09/2021 15:33
-                            </div>
-                        </div>
-
-                        <div class="receved-message">
-                            Testo del messagio
-                            <div class="time-message">
-                                21/09/2021 15:33
-                            </div>
-                        </div>
 
 
 

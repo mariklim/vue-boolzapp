@@ -82,8 +82,14 @@ var app = new Vue({
 					}
 				],
 			},
-		]
-	}
+		],
+		indexContact: 0,
+	},
+	methods:{
+		currentChat: function(currentIndex){
+			this.indexContact = currentIndex;
+		}
+	},
   })
 
 
