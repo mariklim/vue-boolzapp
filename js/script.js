@@ -86,10 +86,10 @@ var app = new Vue({
 		indexContact: 0,
 	},
 	methods:{
+		// al click indice della chat corrente (indexContact che partiva da 0) prende il valore del indice cliccato (indice del array che cicliamo con v-for), se sono uguali si aggiunge la classe "current-chat"
 		currentChat: function(currentIndex){
 			this.indexContact = currentIndex;
 		}
 	},
   })
-
 
