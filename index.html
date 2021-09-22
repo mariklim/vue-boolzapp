@@ -92,9 +92,9 @@
                 <div class="chat" >
                     <div class="container-right">
                         <ul>
-                            <li class="sent-message" v-for = "(value, index) in contacts" :key="index">
+                            <li v-for = "(value, index) in contacts" :key="index" :class = "value.messages[indexContact].status == 'sent' ? 'sent' : 'receved' "  >
                                 <div>
-                                    <p>{{value.messages[indexContact].message}}</p>   
+                                    <p>{{value.messages[indexContact].message}} {{value.messages[indexContact].status}}</p>   
                                        <div class="time-message">21/09/2021 15:33</div>
                                    </div>
                             </li>

@@ -155,11 +155,11 @@ ul{
     margin: auto;
     margin-top: 40px;
 }
-.sent-message{
+.sent{
     background-color: #d5f9ba;
     margin-left: auto;
 }
-.sent-message, .receved-message{
+.sent, .receved{
     width: 40%;
     position: relative;
     background-color: #d5f9ba;
@@ -168,7 +168,7 @@ ul{
     font-size: 13px;
     margin-bottom: 10px;
 }
-.receved-message{   
+.receved{   
     margin-right: auto;
     background-color: #ffffff;
 }
