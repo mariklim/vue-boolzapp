@@ -45,13 +45,15 @@
                         <div class="btn-search">
                             <i class="fas fa-search"></i>
                         </div>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="search"  type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                     <!-- all contacts -->
                     <div class="contacts">
                         <ul>
-                            <li v-for = "(contact, index) in contacts" :key="index" @click="currentChat(index)":class="indexContact == index ? 'current-chat' : null">
+                            <li 
+                            v-for="(contact, index) in filteredList":key="index" 
+                            @click="currentChat(index)":class="indexContact == index ? 'current-chat' : null">
                                 <div class="contact">
                                     <div class="user-avatar">
                                         <img :src="contact.avatar" :alt="contact.name">

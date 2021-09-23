@@ -84,6 +84,7 @@ var app = new Vue({
 			},
 		],
 		indexContact: 0,
+		search: '',
 		newMessage:'',
 		
 		ObjNewMessage:{
@@ -116,6 +117,14 @@ var app = new Vue({
 		},
 		
 	},
+	computed: {
+		filteredList() {
+		  return this.contacts.filter(value => {
+			return value.name.toLowerCase().includes(this.search.toLowerCase())
+			
+		  })
+		}
+	  }
 
   })
 
