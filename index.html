@@ -94,12 +94,9 @@
                         <ul>
                             <!-- sto cercando valore (value) messaggio (message) in array "messages", "indirizio" dove si trova questo valore è array "contacts" + indice corrente del contatto che abbiamo cliccato + array "messages" -->
                             <li v-for = "(value, index) in contacts[indexContact].messages" :key="index" :class = "value.status == 'sent' ? 'sent' : 'receved' "  >
-                                <div>
-
                                     <!-- cosi prendiamo il valore che ci serve per es. message o status -->
                                     <p>{{value.message}}</p>   
-                                       <div class="time-message">21/09/2021 15:33</div>
-                                   </div>
+                                       <div class="time-message">{{value.date}}</div>
                             </li>
                             <!-- <p class="sent">{{newMessages}}</p> -->
                         </ul>
@@ -144,3 +141,6 @@
 </body>
 
 </html>
+
+
+<!-- dayjs().format('DD/MM/YYYY HH:mm:ss') -->
