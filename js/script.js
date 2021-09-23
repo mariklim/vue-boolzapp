@@ -89,6 +89,11 @@ var app = new Vue({
 			message: '',
 			status: 'sent'
 		},
+		newMessagesClean: {
+			date: '10/01/2020 15:30:55',
+			message: '',
+			status: 'sent'
+		},
 		newRecevedMessage:{
 			date: '10/01/2020 15:54:55',
 			message: 'Non posso parlare ora, ti scrivo più tardi',
@@ -103,7 +108,11 @@ var app = new Vue({
 
 		// al tasto Enter ivio il messaggio, [this.indexContact] serve per indicare la Chat corrente, senza This non funziona!
 		btnSend:function(){
-			this.contacts[this.indexContact].messages.push(this.newMessages);
+			if(this.newMessages !== ""){
+				this.contacts[this.indexContact].messages.push(this.newMessages);
+			}
+			
+			
 			// tra un secondo faccio vedere il messagio del user con cui parlo, setTimeout funziona con => function!!! 
 			setTimeout(() => {
 				this.contacts[this.indexContact].messages.push(this.newRecevedMessage);
