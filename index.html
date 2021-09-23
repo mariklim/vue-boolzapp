@@ -94,9 +94,12 @@
                         <ul>
                             <!-- sto cercando valore (value) messaggio (message) in array "messages", "indirizio" dove si trova questo valore è array "contacts" + indice corrente del contatto che abbiamo cliccato + array "messages" -->
                             <li v-for = "(value, index) in contacts[indexContact].messages" :key="index" :class = "value.status == 'sent' ? 'sent' : 'receved' "  >
+                                <div>
+
                                     <!-- cosi prendiamo il valore che ci serve per es. message o status -->
                                     <p>{{value.message}}</p>   
-                                       <div class="time-message">{{value.date}}</div>
+                                       <div class="time-message">21/09/2021 15:33</div>
+                                   </div>
                             </li>
                             <!-- <p class="sent">{{newMessages}}</p> -->
                         </ul>
@@ -124,7 +127,7 @@
                 <div class="row-bottom icons-btn i-btn-bottom">
                     <i class="far fa-smile-beam"></i>
                     <input 
-                    v-model ="newMessages.message" @keyup.enter="btnSend()"
+                    v-model ="newMessage" @keyup.enter="btnSend()"
                     type="text" placeholder="Scrivi un messaggio">
                     <i class="fas fa-microphone"></i>
                     <!-- /Input for sending messages -->

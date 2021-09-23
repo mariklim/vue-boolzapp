@@ -84,13 +84,10 @@ var app = new Vue({
 			},
 		],
 		indexContact: 0,
-		newMessages: {
-			date: '10/01/2020 15:30:55',
-			message: '',
-			status: 'sent'
-		},
-		newMessagesClean: {
-			date: '10/01/2020 15:30:55',
+		newMessage:'',
+		
+		ObjNewMessage:{
+			date: '10/01/2020 15:54:55',
 			message: '',
 			status: 'sent'
 		},
@@ -104,15 +101,14 @@ var app = new Vue({
 		// al click indice della chat corrente (indexContact che partiva da 0) prende il valore del indice cliccato (indice del array che cicliamo con v-for), se sono uguali si aggiunge la classe "current-chat"
 		currentChat: function(currentIndex){
 			this.indexContact = currentIndex;
+			
 		},
 
 		// al tasto Enter ivio il messaggio, [this.indexContact] serve per indicare la Chat corrente, senza This non funziona!
 		btnSend:function(){
-			if(this.newMessages !== ""){
-				this.contacts[this.indexContact].messages.push(this.newMessages);
-			}
-			
-			
+			this.ObjNewMessage.message = this.newMessage;
+			this.contacts[this.indexContact].messages.push(this.ObjNewMessage)
+
 			// tra un secondo faccio vedere il messagio del user con cui parlo, setTimeout funziona con => function!!! 
 			setTimeout(() => {
 				this.contacts[this.indexContact].messages.push(this.newRecevedMessage);
