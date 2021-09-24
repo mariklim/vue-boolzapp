@@ -100,7 +100,7 @@
 
                                     <!-- cosi prendiamo il valore che ci serve per es. message o status -->
                                     <p>{{value.message}}</p>   
-                                       <div class="time-message">21/09/2021 15:33</div>
+                                       <div class="time-message">{{value.date}}</div>
                                    </div>
                             </li>
                        
@@ -141,6 +141,7 @@
 
     </div>
 
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -88,7 +88,7 @@ var app = new Vue({
 		newMessage:'',
 		
 		newRecevedMessage:{
-			date: '10/01/2020 15:54:55',
+			date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
 			message: 'Non posso parlare ora, ti scrivo più tardi',
 			status: 'received'
 		},
@@ -104,7 +104,7 @@ var app = new Vue({
 		btnSend:function(){
 			this.contacts[this.indexContact].messages.push(
 				 {
-					date: '10/01/2020 15:54:55',
+					date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
                     message: (this.newMessage),
                     status: 'sent',
 				 }
