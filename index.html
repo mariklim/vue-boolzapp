@@ -43,16 +43,18 @@
                     </div>
                     <div class="search">
                         <div class="btn-search">
-                            <i class="fas fa-search"></i>
+                            <i class="fas fa-search" @click="sortBy()"></i>
                         </div>
-                        <input v-model="search"  type="text" placeholder="Cerca o inizia una nuova chat">
+                        <input v-model="search" type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
 
                     <!-- all contacts -->
                     <div class="contacts">
                         <ul>
+                            <!-- per la versione con il filtro  v-for="(contact, index) in 	filteredList" -->
                             <li 
-                            v-for="(contact, index) in filteredList":key="index" 
+                            
+                            v-for="(contact, index) in contacts":key="index" v-if="contacts[index].visible == true"
                             @click="currentChat(index)":class="indexContact == index ? 'current-chat' : null">
                                 <div class="contact">
                                     <div class="user-avatar">

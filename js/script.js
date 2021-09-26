@@ -110,23 +110,33 @@ var app = new Vue({
 				 }
 			)
 			this.newMessage = '';
-			
-		
-
 			// tra un secondo faccio vedere il messagio del user con cui parlo, setTimeout funziona con => function!!! 
 			setTimeout(() => {
 				this.contacts[this.indexContact].messages.push(this.newRecevedMessage);
 			  }, 1000);
 		},
-		
+			sortBy: function(){
+				this.contacts.forEach(element => {
+					if(element.name.toLowerCase().includes(this.search.toLowerCase())){
+						element.visible = true
+					}else{
+						element.visible = false
+					}
+								
+					
+				});
+				
+			},
+			
 	},
-	computed: {
-		filteredList() {
-		  return this.contacts.filter(value => {
-			return value.name.toLowerCase().includes(this.search.toLowerCase())
-		  })
-		}
-	  }
+	// versione con filter in computed
+	// computed: {
+	// 	filteredList() {
+	// 	  return this.contacts.filter(value => {
+	// 		return value.name.toLowerCase().includes(this.search.toLowerCase())
+	// 	  })
+	// 	}
+	//   }
 
   })
 
