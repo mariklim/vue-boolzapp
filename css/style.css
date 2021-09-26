@@ -148,6 +148,7 @@ ul{
     height: calc(100% - 140px);
     background-image: url("../img/mine.jpg");
     overflow-y: scroll;
+      scroll-behavior: smooth;
 }
 
 .container-right{

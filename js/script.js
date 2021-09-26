@@ -1,3 +1,4 @@
+
 var app = new Vue({
 	el: '#root',
 	data: {
@@ -129,6 +130,10 @@ var app = new Vue({
 			},
 			
 	},
+	updated() {
+		var objDiv = document.getElementById("chat");
+		objDiv.scrollTop = objDiv.scrollHeight;
+	}
 	// versione con filter in computed
 	// computed: {
 	// 	filteredList() {
