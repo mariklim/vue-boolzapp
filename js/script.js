@@ -126,7 +126,9 @@ var app = new Vue({
 								
 					
 				});
-				
+			},
+			deleteMessage: function(index){
+				this.contacts[this.indexContact].messages.splice(index, 1);
 			},
 			
 	},

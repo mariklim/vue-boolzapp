@@ -167,7 +167,7 @@ ul{
     padding: .9375rem 1.25rem;
     border-radius: 10px;
     font-size: 13px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     word-break: break-all;
 }
 .receved{   
@@ -202,4 +202,21 @@ ul{
     padding: 15px;
     border: 0px;
     border-radius: 10px;
+}
+.popup {
+    position: relative;
+}
+.pop_up{
+    position:absolute;
+    bottom: -67px;
+    right: 2px;
+    width: 100px;
+    height: 70px;
+    background-color: rgb(246, 246, 246);
+    z-index: 1;
+    display: none;
+}
+
+.popup:hover .pop_up{
+    display: inline-block;
 }

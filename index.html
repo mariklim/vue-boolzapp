@@ -98,12 +98,16 @@
                     <div class="container-right">
                         <ul>
                             <!-- sto cercando valore (value) messaggio (message) in array "messages", "indirizio" dove si trova questo valore è array "contacts" + indice corrente del contatto che abbiamo cliccato + array "messages" -->
-                            <li v-for = "(value, index) in contacts[indexContact].messages" :key="index" :class = "value.status == 'sent' ? 'sent' : 'receved' "  >
+                            <li class="popup" v-for = "(value, index) in contacts[indexContact].messages" :key="index" :class = "value.status == 'sent' ? 'sent' : 'receved' "  >
                                 <div>
 
                                     <!-- cosi prendiamo il valore che ci serve per es. message o status -->
                                     <p>{{value.message}}</p>   
                                        <div class="time-message">{{value.date}}</div>
+                                   </div>
+                                   <div class="pop_up">
+                                    <div>Info messaggio</div>
+                                    <div @click="deleteMessage(index)">Cancella messaggio</div>
                                    </div>
                             </li>
                        
