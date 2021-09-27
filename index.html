@@ -106,7 +106,12 @@
                                        <div class="time-message">{{value.date}}</div>
                                    </div>
                                    <div class="pop_up">
-                                    <div>Info messaggio</div>
+                                    <div class="infoBtn" @click="infoBtn()">Info messaggio</div>
+                                    <div>
+                                        <!-- <div>Stato del messagio: {{value.status}}</div>
+                                        <div>Quando: {{value.date}} </div> -->
+                                     
+                                    </div>
                                     <div @click="deleteMessage(index)">Cancella messaggio</div>
                                    </div>
                             </li>

@@ -209,14 +209,43 @@ ul{
 .pop_up{
     position:absolute;
     bottom: -67px;
-    right: 2px;
-    width: 100px;
+    right: -5px;
+    width: 160px;
     height: 70px;
+    text-align: center;
+    padding: 10px 0;
     background-color: rgb(246, 246, 246);
     z-index: 1;
     display: none;
 }
 
+
+.pop_up div{
+    padding: 4px 0;
+    cursor: pointer;
+}
+
+
 .popup:hover .pop_up{
+    display: inline-block;
+}
+
+
+.pop_up div:hover{
+    background-color: rgba(212, 205, 205, 0.774);
+}
+
+.infoMessage{
+    width: 180px;
+    height: 80px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgb(246, 246, 246);
+    z-index: 2;
+    display: none;
+    
+}
+
+.infoMessage.active{
     display: inline-block;
 }

@@ -87,6 +87,7 @@ var app = new Vue({
 		indexContact: 0,
 		search: '',
 		newMessage:'',
+		isActive: false,
 		
 		newRecevedMessage:{
 			date: dayjs().format('DD/MM/YYYY HH:mm:ss'),
@@ -130,6 +131,9 @@ var app = new Vue({
 			deleteMessage: function(index){
 				this.contacts[this.indexContact].messages.splice(index, 1);
 			},
+			// infoBtn: function(){
+			// 	this.isActive = true;
+			// },
 			
 	},
 	updated() {
